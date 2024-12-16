@@ -1,0 +1,143 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Moving focus between panes
+  {
+    "key": "cmd+1",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "!filesExplorerFocus"
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.closeSidebar",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.action.closePanel",
+    "when": "terminalFocus"
+  },
+
+  // Moving focus between editors / buffers
+  {
+    "key": "cmd+shift+]",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+shift+[",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward"
+  },
+
+  // Folding
+  {
+    "key": "cmd+-",
+    "command": "editor.fold"
+  },
+  {
+    "key": "cmd+=",
+    "command": "editor.unfold"
+  },
+  {
+    "key": "cmd+shift+-",
+    "command": "editor.foldAll"
+  },
+  {
+    "key": "cmd+shift+=",
+    "command": "editor.unfoldAll"
+  },
+
+  // Selecting text
+  {
+    "key": "alt+up",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "key": "alt+down",
+    "command": "editor.action.smartSelect.shrink"
+  },
+  {
+    "key": "alt+shift+up",
+    "command": "editor.action.insertCursorAbove"
+  },
+  {
+    "key": "alt+shift+down",
+    "command": "editor.action.insertCursorBelow"
+  },
+  {
+    "key": "ctrl+G",
+    "command": "editor.action.addSelectionToNextFindMatch"
+  },
+  {
+    // inverse of ctrl+G
+    "key": "ctrl+shift+G",
+    "command": "editor.action.moveSelectionToPreviousFindMatch"
+  },
+
+  // Editing text
+  {
+    "key": "ctrl+shift+j",
+    "command": "editor.action.joinLines"
+  },
+  {
+    "key": "cmd+backspace",
+    "command": "editor.action.deleteLines"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "editor.action.commentLine",
+        "cursorDown"
+      ]
+    }
+  },
+
+  // Manipulating files
+  {
+    "key": "ctrl+n",
+    "command": "workbench.files.action.createFileFromExplorer"
+  },
+  {
+    "key": "cmd+shift+c",
+    "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "ctrl+k 1",
+    "command": "revealInExplorer"
+  },
+
+  // Testing
+  {
+    "key": "ctrl+shift+r",
+    "command": "testing.runAtCursor"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "testing.reRunLastRun"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "testing.debugAtCursor"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "testing.debugLastRun"
+  },
+]
